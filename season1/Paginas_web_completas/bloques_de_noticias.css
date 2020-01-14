@@ -1,0 +1,55 @@
+	/*Alejandro José Jurado Reyes*/
+	
+	/*El container abarca toda la la pagina*/
+	#container{
+		max-width: 1450px;
+		margin: 0 auto ; 
+	}
+	/*El container2 abarca la zona central de la pagina web */
+	#container2{
+		max-width: 1250px;
+		float: left;
+		 
+
+	}
+	/*El container3 abarca del lateral derecho de lapagina */
+	#container3{
+		display: block;
+		width: 80px;
+		float: left;
+		margin-left: 100px;
+		
+	}
+	/*sirve para que los articulos esten en la posicion central de la pagina*/
+	article{
+		display: inline-block;
+		margin: 5px;
+		vertical-align: top;
+
+	}
+	
+	
+	/*Es la zona de las imagenes del centro para que se separen entre ellas */
+	.middle{
+		width: 500px;
+		height: 100px;
+
+	}
+	/*Es el estilo  de la de los titulos de la pagina*/
+	h1{
+		background-color: #b3e6b3 ;
+		width: 950px;
+		border-top-left-radius:10px;  
+		padding: left;
+		border-bottom-right-radius: 10px;
+	}
+	h2{
+
+		background-color: #ff6666; 
+		width: 200px;
+		border-top-left-radius:10px;  
+		padding: left;
+		border-bottom-right-radius: 10px;
+
+	}
+	

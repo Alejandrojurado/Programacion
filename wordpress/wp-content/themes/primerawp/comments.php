@@ -1,0 +1,1 @@
+<!--Es la plantilla a la que llamaremos ddentro de singel.php para añadir comentarios a nuestos posts   !-->

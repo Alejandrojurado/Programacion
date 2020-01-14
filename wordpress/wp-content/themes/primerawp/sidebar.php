@@ -1,0 +1,1 @@
+<!--Este archivo esta pensado para mostrarlo a modo de barra lateral (sobre todo cuando se trata de un blog ) o con widgets (por eje,plo un buscador , un listado de categorias o los post as visitados)!-->

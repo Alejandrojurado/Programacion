@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+</head>
+<body>
+<form name="personal" id="personal">
+
+	<label for="nombre">Nombre:</label> 
+	<input type="text" name="nombre" required>
+	
+	<label for="apellidos">Apellidos:</label>
+	<input type="text" name="apellido" required>
+
+	<label for="edad">Edad:</label>
+		<select name="edad">
+
+			<option value="vacio">....</option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+
+		</select>
+
+
+
+		<input type="reset" name="reset" onclick="document.getElementByid('personal')">
+</form>	
+</body>
+</html>

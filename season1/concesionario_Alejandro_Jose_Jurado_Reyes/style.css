@@ -1,0 +1,39 @@
+
+	/*Alejandro José Jurado Reyes*/
+
+	/*Con eto lo que hago es dar el ancho el largo y le doy a toda la pagina la fuente que he descargado de internet.*/
+	#contenedor1{
+		width: 100%;
+		max-height: 2000px;		
+ 	 	font-family: 'Libre Baskerville', serif;
+
+	}
+	/*Con esto lo que hago es dar color al titulo de la página*/
+	#titulo{
+		color: #26918b;
+	}
+	
+	/*Esto es una clase que da color a la letra y a los bordes */
+	.edicion{
+		
+		border-color: #26918b;
+		color: #26918b;
+	}
+
+	.tabla{
+		width: 1px;
+		display: inline-block;
+
+	}
+
+
+	/*Esto hace que todos los botones esten en invisible y tambien le damos a la letra el color*/
+	button {
+	color: #26918b;
+    background: transparent;
+    border: none !important;
+	}
+
+
+
+	

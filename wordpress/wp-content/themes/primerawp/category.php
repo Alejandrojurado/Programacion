@@ -1,0 +1,1 @@
+<!-- sirve para mostrar un listado de post de una categoria especifica !-->

@@ -1,0 +1,1 @@
+<!-- Este es el archivo de plantilla que mostrara por defecto cualquier pagina que creemos ,siempre y cuando no se le haya especificado una plantilla !-->

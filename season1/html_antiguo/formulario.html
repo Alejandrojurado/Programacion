@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+</head>
+<body>
+	<form action="registro.php" name="myform" method="GET">
+		<label for="email">Correo Electrónico</label>
+		<input type="email" name="email" required><br>
+		
+		<label for="nombre">Nombre:</label> 
+		<input type="text" name="nombre" required><br>
+
+		<label for="apellidos">Apellidos:</label>
+		<input type="text" name="apellido" required><br>
+
+		<label for="contrasena">Contraseña:</label>
+		<input type="password" name="contrasena" required><br>
+
+		<label for="sitioweb">URL</label>
+		<input type="url" name="sitioweb" placeholder="Escriba la url de tu página web"><br>
+
+		<label for="hoy">Fecha</label>
+		<input type="date" name="hoy"><br>
+
+		<label for="ahora">Tiempo</label>
+		<input type="time" name="ahora"><br>
+
+		<label for="fnacimiento">Fecha y hora de nacimento</label>
+		<input type="datetime" name="fnacimiento"><br>
+
+		<label for="mnacimiento">mes de tu nacimiento</label>
+		<input type="month" name="mnacimiento"><br>
+
+		<label for="semana">Semana:</label>
+		<input type="week" name="semana"><br>
+
+		<label for="edad">Edad de (0 - 150):</label>
+		<input type="number" name="edad" min="0" max="150" value="0"><br>
+
+		<label for="satisfaccion">Grado de satisfaccion de 0 a 10 </label>
+		<input type="range" name="satisfaccion" min="0" max="10" value="0"><br>
+
+		<label for="telefono">Teléfono</label>
+		<input type="tel" name="telefono" required><br>
+
+		<label for="busqueda">Termino de busqueda</label>
+		<input type="search" name="busqueda"><br>
+
+		<label for="colorfav">color faborito</label>
+		<input type="color" name="colorfav"><br>
+
+		<label for="genero">Género</label>
+		<input type="radio" name="genero" value="mujer" id="mujer" checked><label for="mujer">mujer</label>
+		<input type="radio" name="genero" value="hombre" id="hombre"><label for="hombre">hombre</label><br>
+		
+
+		<label for="vehiculo">Modelo de su vehiculo:</label><br>
+		<select name="vehiculo"  multiple>
+
+			<option value="seleccion">Seleccione su vehiculo</option>
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat">Fiat</option>
+			<option value="audi">Audi</option>
+
+		</select><br>
+
+		<label for="observaciones">Observaciones:</label>	<br>
+		<textarea name="observaciones" rows="10" cols="30"></textarea><br>
+		
+		<button onclick="alert('Hola mundo')">Haz click aqui!!</button><br>
+		<label for="guardar"></label><br>
+		<input type="submit" name="guardar" value="Guardar cambios" /><br>
+
+
+		
+
+	</form>
+
+	
+</body>
+</html>

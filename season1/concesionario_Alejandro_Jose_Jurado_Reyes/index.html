@@ -1,0 +1,80 @@
+<!--Alejandro José Jurado Reyes-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Concesionario</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="contenedor1">	
+
+		<h1 id="titulo">Inventario del concesionario de alquiler</h1>
+		
+		<fieldset class="edicion" >
+
+			<legend class="edicion" >Inventario</legend>
+
+			<fieldset class="tabla">				
+					<label>MARCA</label>
+					<select id="imp_marca" size="5"> </select>				
+			</fieldset>
+
+			<fieldset class="tabla">
+					<label>MODELO</label>
+					<select id="imp_modelo" size="5"> </select>				
+			</fieldset>
+			<button id="actualizar">Reset</button>
+
+		</fieldset>
+
+		<fieldset class="edicion" >
+
+			<legend class="edicion" >Edición</legend>
+			
+				<h4 class="edicion" >Marca:</h4>
+
+				<input type="text" name="marca" id="marca"><br>
+
+				<button id="anadir_marca">Añadir</button>
+
+				<button id="eliminar_marca">Eliminar</button>
+
+
+				<h4 class="edicion">Modelo:</h4>
+
+				<input type="text" name="marca" id="modelo"><br>
+
+				<button id="anadir_modelo">Añadir</button>
+
+				<button id="eliminar_modelo">Eliminar</button><br><br>
+
+
+				<button id="enviar">Enviar</button>
+				<button id="eliminar_todo">Eliminar Modelo</button>
+
+		</fieldset>
+
+		<fieldset class="edicion" >
+
+			<legend class="edicion" >Estado</legend>
+			<p id="estado3"></p>
+			<p id="estado"></p>
+			<p id="estado2"></p>
+			
+		</fieldset>
+
+		<fieldset class="edicion" >
+
+			<legend class="edicion" >Logger</legend>
+			<p id="logger"></p>
+			
+		</fieldset>
+
+	</div>
+	
+
+	<script type="text/javascript" src="procesa.js"></script>
+</body>
+</html>

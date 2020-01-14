@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+</head>
+<body>
+<form action="procesa.php" name="personal" id="personal" method="GET">
+<table>
+	<tbody>
+		<tr>
+			<td>
+
+				<label for="nombre"><strong>Nombre:</strong></label><br>
+				<input type="text" name="nombre" >
+			</td>
+			<td>
+				<label for="apellido"> <strong>Apellidos:</strong> </label><br>
+				<input type="text" name="apellido" >
+			</td>
+			<td>
+				<label for="edad"><strong>Edad:</strong> </label><br>
+				<select name="edad">
+
+					<option value="vacio">....</option>
+					<option value="<Menor de 20 años">Menor de 20 años</option>
+					<option value="Entre 20 y 39 años">Entre 20 y 39 años</option>
+					<option value="Entre 40 y 59 años">Entre 40 y 59 años </option>
+					<option value="60 años o más ">60 años o más</option>
+
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+
+				<label for="peso"><strong>Peso:</strong>  </label><br>
+				<input type="number" name="peso" min="0"><label for="kg">kg</label>
+			</td>
+			<td>
+				<label for="genero"><strong>Sexo: </strong> </label><br>
+				<input type="radio" name="genero" value="hombre" id="hombre"><label for="hombre">Hombre</label>
+				<input type="radio" name="genero" value="mujer" id="mujer"><label for="mujer">Mujer</label>
+			</td>
+			<td>
+				<label for="escivil"><strong>Estado Civil: </strong> </label><br>
+				<input type="radio" name="escivil" value="soltero"><label for="soltero">Soltero</label>	
+				<input type="radio" name="escivil" value="casados"><label for="casados">Casado</label>
+				<input type="radio" name="escivil" value="otro"><label for="otro">Otro:</label>
+			
+			
+			</td>
+		</tr>
+
+	</tbody>			
+</table>
+
+<table style="border-spacing: 5px;">
+	<tbody>
+		<tr>
+
+			<td rowspan="2" class="border"><label for="aficiones"><strong>Aficiones:</strong> </label></td>
+	
+			<td><input type="checkbox" name="cine"><label for="cine">Cine</label></td>
+			<td><input type="checkbox" name="literatura"><label for=""literatura>Literatura</label></td>
+			<td><input type="checkbox" name="tebeos"><label for="tebeos">Tebeos</label></td>
+
+		</tr>
+		<tr>
+
+	
+			<td><input type="checkbox" name="deporte"><label for="deporte">Deporte</label></td>
+			<td><input type="checkbox" name="musica"><label for="musica">Música</label></td>
+			<td><input type="checkbox" name="television"><label for="television">Televisión</label></td>
+
+
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<tr>
+		<td>
+			<input type="submit" name="enviar" value="Enviar" />
+			<input type="reset" name="reset" onclick="document.getElementByid('personal')">
+		</td>
+	</tr>
+</table>
+</form>	
+</body>
+</html>
