@@ -1,0 +1,23 @@
+
+
+
+.color{
+	background-color: #7132ec;
+}
+.edicion{
+	text-align: center;
+}
+.clasecss{
+   background-color: #ff8800;
+   font-weight: bold;
+}
+.edicion{
+	min-height: 200px;
+}
+.edicion2{
+	min-height: 150px;
+}
+.edicion3{
+	min-width: 50px;
+	min-height: 50px;
+}
