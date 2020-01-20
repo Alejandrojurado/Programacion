@@ -1,35 +1,18 @@
 
     $(document).ready(function(){
-        $("a").mouseover(function(event){
-            $("#capa").addClass("clasecss");
+        $("#ocultar").click(function(event){
+            event.preventDefault();
+            $("#capaefectos").hide("slow");
         });
-        $("a").mouseout(function(event){
-            $("#capa").removeClass("clasecss");
+
+        $("#mostrar").click(function(event){
+            event.preventDefault();
+            $("#capaefectos").show(3000);
         });
     });
 
 
-
-   document.getElementById('capa').addEventListener("mouseover", cambiarEstilo, false);
-   document.getElementById('capa').addEventListener("mouseout", quitarEstilo, false);
-
-   function cambiarEstilo() {
-       document.getElementById("capa").className = "clasecss";
-
-   }
-
-   function quitarEstilo() {
-
-        document.getElementById("capa").className = "";
-   }
-
-   //Boton mayor de edad
-
-
-     document.getElementById("edad").addEventListener('click' , mostrar, false);
-
-     function mostrar(){
-
-            document.getElementsByClassName('capa1').className = "";
-
-    }
+    $("#micapa").fadeOut(1000, function(){
+        $("#micapa").css({'top': 300, 'left':200});
+        $("#micapa").fadeIn(1000);
+    });
