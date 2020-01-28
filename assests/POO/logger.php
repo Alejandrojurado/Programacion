@@ -24,7 +24,7 @@
 			  	// Check message
 			  if($this->message == '') {
 			    return array(status => false, message => 'Message is empty');
-			  }
+			}
 
 			  	// Get IP address
 			  if( ($this->remote_addr = $_SERVER['REMOTE_ADDR']) == '') {
