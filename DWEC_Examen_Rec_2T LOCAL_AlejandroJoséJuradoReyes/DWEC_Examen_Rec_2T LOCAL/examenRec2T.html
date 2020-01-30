@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- estilo propio -->
+    <link rel="stylesheet" href="css/misEstilos.css">
+
+	<title>EXAMEN RECUPERACION JQUERY - TU NOMBRE</title>
+</head>
+<body class="container">
+
+	<h1>LISTA DE CONTACTOS - Alejandro José Jurado Reyes</h1>
+	<br>
+    <div id="error" class="error">No deje ningun campo sin rellenar</div>
+	<ul id="contactos-lista">
+
+	</ul>
+
+	<form id="contactos-form">
+		<div class="item text">
+			<label>Nombre:</label>
+			<div class="campo"><input type="text" id="firstName" autofocus/></div>
+		</div>
+		<div class="item text">
+			<label>Apellido:</label>
+			<div class="campo"><input type="text" id="lastName" /></div>
+		</div>
+		<div class="item text">
+			<label>Email:</label>
+			<div class="campo"><input type="text" id="email" /></div>
+		</div>
+		<div class="button-wrapper">
+			<div class="item button">
+				<div class="campo"><input type="button" id="botonStore" value="Store" /></div>
+			</div>
+			<div class="item button">
+				<div class="campo"><input type="button" id="botonDiscard" value="Discard" /></div>
+			</div>
+			<div class="item button button-default">
+				<div class="campo"><input type="submit" id="botonSave" value="Save" /></div>
+			</div>
+		</div>
+		<input type="hidden" name="id_entrada" value="0" />
+	</form>
+
+
+	<!-- jQuery library -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+    <!-- Mi jQuery -->
+    <script type="text/javascript" src="js/jqueryAlejandroJuradoReyes.js">
+
+    </script>
+</body>
+</html>
