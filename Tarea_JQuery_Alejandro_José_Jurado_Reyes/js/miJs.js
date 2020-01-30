@@ -14,20 +14,25 @@
         });
 
 
-        $('#anadir').click(function(){
-            var elemento = $('#lista').val();
-            if ($("#lista").val() != "") {
-                var nuevoli = document.createElement("li");
-                $(nuevoli).html(elemento);
-                $("#lista_texto").append(nuevoli);
+            $('#anadir').click(function(){
+                var elemento = $('#lista').val();
+                var mayuscula = elemento.charAt(0).toUpperCase() + elemento.slice(1);
+                if ($("#lista").val() != "") {
+                    var nuevoli = document.createElement("li");
+                    $(nuevoli).html(mayuscula);
+                    $("#lista_texto").append(nuevoli);
 
-                $("#lista").val("");
+                    $("#lista").val("");
+                    //Focus solo funciona en Firefox y no se puede ejecutar en google chrome
+                    $("#lista").focus();
 
-            } else {
-                $("#error").show();
-            }
 
-        });
+                } else {
+                    $("#error").show();
+                }
+
+            });
+
 
         $(document).on("click", "#lista_texto > li" , function(){
             $(this).remove();
