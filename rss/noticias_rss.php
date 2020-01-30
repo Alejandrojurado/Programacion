@@ -42,7 +42,7 @@
                 $data .= '<pubDate>2018-12-31 12:13:16</pubDate>';
                 $data .= '<category>Actualidad-Cataluña</category>';
                 $data .= '<description>Sanchez ha traicionado el pacto con los subnormales</description>';
-            $data .= '</item>';
+            $data .= '</item>';fda
 
             while () {
 
