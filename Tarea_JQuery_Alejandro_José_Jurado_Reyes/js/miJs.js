@@ -14,6 +14,9 @@
         });
 
 
+            var storage = localStorage;
+            var contador = 1;
+
             $('#anadir').click(function(){
                 var elemento = $('#lista').val();
                 var mayuscula = elemento.charAt(0).toUpperCase() + elemento.slice(1);
@@ -21,33 +24,40 @@
                     var nuevoli = document.createElement("li");
                     $(nuevoli).html(mayuscula);
                     $("#lista_texto").append(nuevoli);
-
                     $("#lista").val("");
                     //Focus solo funciona en Firefox y no se puede ejecutar en google chrome
                     $("#lista").focus();
-
-
-                } else {
+                    storage.setItem(contador,mayuscula);
+                    contador++;
+                }
+                else {
                     $("#error").show();
                 }
+            });
+
+
+            $(document).on("click", "#lista_texto > li" , function(){
+                $(this).remove();
 
             });
 
 
-        $(document).on("click", "#lista_texto > li" , function(){
-            $(this).remove();
+            $("#reset").click(function(){
+    	           $("li").remove()
 
-        });
+            });
+
+            $("#delete").click(function () {
+                clave = $("#clave").val();
+                $("#clave").val("");
+                storage.removeItem(clave);
+
+            });
 
 
-        $("#reset").click(function(){
-	           $("li").remove()
-        });
+            $("#lista").click(function() {
+                $("#error").hide();
 
-
-        $("#lista").click(function() {
-            $("#error").hide();
-
-        });
+            });
 
     });

@@ -84,17 +84,17 @@ include("config.inc.php"); //include config file
 
         <?php
 //List products from database
-        $results = $mysqli_conn->query("SELECT product_name, product_desc, product_code, product_image, product_price FROM products_list");
+        $results = $mysqli_conn->query("SELECT product_name, product_desc, product_code, product_image, product_price FROM shop_products");
         if (!$results) {
             printf("Error: %s\n", $mysqli_conn->error);
             exit;
         }
 
 //Display fetched records as you please
-        $products_list = '<ul class="products-wrp">';
+        $shop_products = '<ul class="products-wrp">';
 
         while ($row = $results->fetch_assoc()) {
-            $products_list .= <<<EOT
+            $shop_products .= <<<EOT
 <li>
 <form class="form-item">
 <h4>{$row["product_name"]}</h4>
@@ -137,9 +137,9 @@ include("config.inc.php"); //include config file
 </li>
 EOT;
         }
-        $products_list .= '</ul></div>';
+        $shop_products .= '</ul></div>';
 
-        echo $products_list;
+        echo $shop_products;
         ?>
     </body>
 </html>
