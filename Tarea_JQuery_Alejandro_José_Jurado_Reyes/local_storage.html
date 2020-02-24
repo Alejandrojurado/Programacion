@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--Alejandro José Jurado Reyes-->
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tarea_JQuery</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="Bootstrap/bootstrap.min.css">
+        <!--Optional  css-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="images/icon.png">
+
+
+        </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron color">
+                <h1>Ejercicios JQuery </h1>
+                <h3>Alejandro José Jurado Reyes</h3>
+            </div>
+            <!--Primer Ejercicio-->
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-warning" id="ocultar">Ocultar</button>
+                    <button type="button" class="btn btn-warning" id="mostrar">Mostrar</button>
+                    <button type="button" class="btn btn-warning" id="toggle">Toggle</button>
+                </div>
+            </div>
+            <div class="row margen">
+                <div class="col-sm-6 col-md-6 " id="elemento">
+                    <div class="card bg-danger">
+                        <div class="card-body">
+                            <h5 class="card-title">Elemento Dinamico</h5>
+                            <p class="card-text">Esto es un elemento dicamico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Segunda parte del ejercicio-->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="alert alert-danger margen" role="alert" id="error">
+                        <p>Tiene que escribir algo </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margen">
+                <div class="col-sm-6 col-md-8">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="lista" id="lista" autofocus placeholder="Añadir en la lista" >
+                            <button type="button" class="btn btn-primary" id="anadir">Añadir</button>
+                            <button type="button" class="btn btn-primary" id="reset">reset</button>
+                            <button type="button" class="btn btn-primary" id="delete">Borrar</button>
+                            <input type="text" name="calve" id="clave" class="margen" placeholder="clave">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row margen">
+                <div class="col-sm-6 col-md-6">
+                    <ol id="lista_texto">
+
+                    </ol>
+
+                </div>
+            </div>
+        </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+        <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- Optional JavaScript -->
+        <script type="text/javascript" src="js/miJs_local.js" ></script>
+    </body>
+</html>
